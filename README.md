@@ -3,9 +3,9 @@
 只需要导入CCDoubleTableview,并在界面用SB或者代码初始化界面，传入数据即可
 数据的格式为
 [
-{[]:@"title",[]:@"content"},
-{[]:@"title",[]:@"content"},
-{[]:@"title",[]:@"content"},
+{[数组]:@"title",[数组]:@"content"},
+{[数组]:@"title",[数组]:@"content"},
+{[数组]:@"title",[数组]:@"content"},
 ];
 即一个数组包括多个字典，字典分title：Section名，和content：每个Section的子数据
 content内装TakeOutModel,每个model有
