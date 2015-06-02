@@ -8,6 +8,7 @@
   {[数组]:@"title",[数组]:@"content"},
   ];
     即一个数组包括多个字典，字典分title：Section名，和content：每个Section的子数据
+    
     content内装TakeOutModel,每个model有
  * 食品标题
  * 食品id
