@@ -18,5 +18,5 @@
 等属性，您也可以自己添加属性并进行扩展
     
 这是我的第一个项目，可能会有问题，还请您多包涵，多多指正。
-![](https://github.com/zackschen/CCDoubleTableView/blob/master/4AEE10CF-FE36-45A2-8B3C-FF8FAAF133A2.png) 
-![](https://github.com/zackschen/CCDoubleTableView/blob/master/C9B12FA9-7FC9-421A-9839-A3047FCFEA6F.png)
+    ![](https://github.com/zackschen/CCDoubleTableView/blob/master/4AEE10CF-FE36-45A2-8B3C-FF8FAAF133A2.png) 
+    ![](https://github.com/zackschen/CCDoubleTableView/blob/master/C9B12FA9-7FC9-421A-9839-A3047FCFEA6F.png)
