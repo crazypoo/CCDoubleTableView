@@ -4,9 +4,9 @@
 数据的格式为
     
   `[
-  {[数组]:@"title",[数组]:@"content"},
-  {[数组]:@"title",[数组]:@"content"},
-  {[数组]:@"title",[数组]:@"content"},
+  {[每个Seciton的名字]:@"title",[数组]:@"content"},
+  {[每个Seciton的名字]:@"title",[数组]:@"content"},
+  {[每个Seciton的名字]:@"title",[数组]:@"content"},
   ]`
     
     即一个数组包括多个字典，字典分title：Section名，和content：每个Section的子数据
