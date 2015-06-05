@@ -178,11 +178,36 @@
         [self.rightTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:indexPath.row] atScrollPosition:UITableViewScrollPositionTop animated:nil];
     }
 }
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (tableView.tag ==1) {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
+}
 
 - (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return tableView.tag == 1 ? YES : NO;
 }
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat y = scrollView.contentOffset.y;
+    
+    // 60 是右边cell的高度
+    NSInteger section = y/60;
+    NSInteger chooseSection=0;
+    for (NSInteger i=0; i<self.dataArray.count; i++) {
+        NSInteger sum;
+        sum +=[self.dataArray[i][@"content"] count];
+        if (sum>section) {
+            chooseSection = i;
+            break;
+        }
+    }
+    [self.leftTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:chooseSection inSection:0] animated:YES scrollPosition:UITableViewScrollPositionTop];
+}
+
 
 #pragma mark - cell点击
 /**
